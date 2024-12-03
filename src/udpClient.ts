@@ -7,6 +7,7 @@ const app = express();
 
 const CLIENT_PORT: any = process.env.CLIENTPORT;
 const PORT: any = process.env.PORT;
+const TARGETIP: any = process.env.TARGETIP;
 const HOST: any = process.env.HOST;
 
 // Create a UDP client
@@ -21,6 +22,6 @@ client.on("error", (err) => {
   client.close();
 });
 
-client.bind(PORT, HOST, () => {
-  console.log(`Client listening on ${HOST}:${PORT}`);
+client.bind(PORT, TARGETIP, () => {
+  console.log(`Client listening on ${TARGETIP}:${PORT}`);
 });
