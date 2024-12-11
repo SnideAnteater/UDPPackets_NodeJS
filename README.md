@@ -1,4 +1,4 @@
-# NMS Glass Rotunda
+# UDP PACKET STUDY
 
 A UDP client-server application built with Node.js, TypeScript, and Express.
 
